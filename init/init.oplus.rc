@@ -45,3 +45,6 @@ on property:sys.boot_completed=1 && property:persist.sys.battery_bypass_supporte
 # Disable Bypass Charging
 on property:sys.boot_completed=1 && property:persist.sys.battery_bypass_supported=true && property:persist.sys.battery_health_bypass_enabled=false
   write /sys/class/oplus_chg/battery/mmi_charging_enable 1
+  
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
