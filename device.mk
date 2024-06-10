@@ -208,6 +208,7 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot-crow_default_4_3_1.sh \
     init.oplus.rc \
     init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.recovery.rc \
     init.qcom.sh \
