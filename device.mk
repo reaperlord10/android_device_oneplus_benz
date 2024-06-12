@@ -281,6 +281,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResTarget \
+    DeviceAsWebcamResTarget \
     FrameworksResTarget \
     NcmTetheringOverlay \
     OPlusFrameworksResTarget \
