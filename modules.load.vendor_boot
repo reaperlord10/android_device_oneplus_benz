@@ -3,6 +3,7 @@ gh_virt_wdt.ko
 qcom_cpu_vendor_hooks.ko
 clk-rpmh.ko
 gcc-kalama.ko
+gcc-crow.ko
 icc-rpmh.ko
 camcc-kalama.ko
 qcom_ipcc.ko
@@ -25,6 +26,7 @@ dcc_v2.ko
 dcvs_fp.ko
 device_info.ko
 dispcc-kalama.ko
+dispcc-crow.ko
 tcsrcc-kalama.ko
 videocc-kalama.ko
 gdsc-regulator.ko
@@ -47,10 +49,13 @@ memory_dump_v2.ko
 minidump.ko
 msm_dma_iommu_mapping.ko
 pinctrl-kalama.ko
+pinctrl-crow.ko
 qnoc-kalama.ko
+qnoc-crow.ko
 nvmem_qcom-spmi-sdam.ko
 phy-qcom-ufs.ko
 phy-qcom-ufs-qmp-v4-kalama.ko
+phy-qcom-ufs-qmp-v4-crow.ko
 phy-qcom-ufs-qrbtc-sdm845.ko
 pinctrl-msm.ko
 proxy-consumer.ko
