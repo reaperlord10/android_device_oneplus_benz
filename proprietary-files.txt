@@ -1294,7 +1294,7 @@ odm/etc/vintf/manifest/manifest_touch_aidl.xml
 odm/lib64/vendor.oplus.hardware.touch-V2-ndk.so;MODULE_SUFFIX=_odm
 
 # Sensors config
-odm/etc/sensor/config/aston_qrd_ois_system.json
+odm/etc/sensor/config/benz_qrd_ois_system.json
 odm/etc/sensor/config/kailua_mtp_alsps.json
 odm/etc/sensor/config/kailua_mtp_alsps_hw_tcs3720.json
 odm/etc/sensor/config/kailua_mtp_bmi26x.json

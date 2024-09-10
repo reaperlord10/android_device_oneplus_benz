@@ -17,7 +17,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2376
+TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 # IR
@@ -47,7 +47,7 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator.service.oplus-richtap
 
 # Inherit from the common OEM chipset makefile.
-$(call inherit-product, device/oneplus/sm8550-common/common.mk)
+$(call inherit-product, device/oneplus/sm7550-common/common.mk)
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/oneplus/aston/aston-vendor.mk)
+$(call inherit-product, vendor/oneplus/benz/benz-vendor.mk)

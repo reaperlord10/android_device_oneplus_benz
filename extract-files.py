@@ -19,7 +19,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'vendor/oneplus/sm8550-common',
+    'vendor/oneplus/sm7550-common',
     'hardware/oplus',
     'hardware/qcom-caf/sm8550',
     'vendor/qcom/opensource/display',
@@ -75,7 +75,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'aston',
+    'benz',
     'oneplus',
     namespace_imports=namespace_imports,
     blob_fixups=blob_fixups,
@@ -84,6 +84,6 @@ module = ExtractUtilsModule(
 
 if __name__ == '__main__':
     utils = ExtractUtils.device_with_common(
-        module, 'sm8550-common', module.vendor
+        module, 'sm7550-common', module.vendor
     )
     utils.run()
