@@ -96,8 +96,8 @@
          <value>2</value> // cluster 1 has cpu4, cpu5
        </array> -->
   <array name="cpu.clusters.cores">
-      <value>3</value> <!-- cluster 0 has cpu0, cpu1, cpu2, cpu3 -->
-      <value>4</value> <!-- cluster 1 has cpu4, cpu5, cpu6 -->
+      <value>4</value> <!-- cluster 0 has cpu0, cpu1, cpu2, cpu3 -->
+      <value>3</value> <!-- cluster 1 has cpu4, cpu5, cpu6 -->
       <value>1</value> <!-- cluster 2 has cpu7 -->
   </array>
 
@@ -107,143 +107,105 @@
        There must be one of these for each cluster, labeled:
        cpu.speeds.cluster0, cpu.speeds.cluster1, etc... -->
     <array name="cpu.core_speeds.cluster0">
-        <value>307200</value>    <!-- 300   MHz CPU speed -->
+        <value>307200</value>
         <value>441600</value>
-        <value>556800</value>
-        <value>672000</value>
-        <value>787200</value>
+        <value>614400</value>
+        <value>806400</value>
         <value>902400</value>
-        <value>1017600</value>
-        <value>1113600</value>
+        <value>1075200</value>
         <value>1228800</value>
-        <value>1344000</value>
-        <value>1459200</value>
+        <value>1363200</value>
         <value>1555200</value>
-        <value>1670400</value>
-        <value>1785600</value>
-        <value>1900800</value>
-        <value>2016000</value>
+        <value>1689600</value>
+        <value>1804800</value>
     </array>
 
     <array name="cpu.core_speeds.cluster1">
         <value>499200</value>
-        <value>614400</value>
-        <value>729600</value>
-        <value>844800</value>
+        <value>652800</value>
         <value>940800</value>
-        <value>1056000</value>
-        <value>1171200</value>
-        <value>1286400</value>
+        <value>1113600</value>
+        <value>1267200</value>
         <value>1401600</value>
-        <value>1536000</value>
+        <value>1516800</value>
         <value>1651200</value>
-        <value>1785600</value>
-        <value>1920000</value>
+        <value>1804800</value>
         <value>2054400</value>
-        <value>2188800</value>
-        <value>2323200</value>
+        <value>2208000</value>
+        <value>2400000</value>
+    </array>
+
+    <array name="cpu.core_speeds.cluster2">
+        <value>499200</value>
+        <value>652800</value>
+        <value>940800</value>
+        <value>1171200</value>
+        <value>1267200</value>
+        <value>1401600</value>
+        <value>1516800</value>
+        <value>1651200</value>
+        <value>1804800</value>
+        <value>2054400</value>
+        <value>2112000</value>
+        <value>2284800</value>
         <value>2457600</value>
         <value>2592000</value>
-        <value>2707200</value>
-        <value>2803200</value>
-    </array>
-    
-    <array name="cpu.core_speeds.cluster2">
-        <value>595200</value>
-        <value>729600</value>
-        <value>864000</value>
-        <value>998400</value>
-        <value>1132800</value>
-        <value>1248000</value>
-        <value>1363200</value>
-        <value>1478400</value>
-        <value>1593600</value>
-        <value>1708800</value>
-        <value>1843200</value>
-        <value>1977600</value>
-        <value>2092800</value>
-        <value>2227200</value>
-        <value>2342400</value>
-        <value>2476800</value>
-        <value>2592000</value>
-        <value>2726400</value>
-        <value>2841600</value>
-        <value>2956800</value>
-        <value>3187200</value>        
+        <value>2630400</value>
     </array>
   <!-- Current at each CPU speed for cluster 0, as per 'cpu.speeds.cluster0'.
        Like cpu.speeds.cluster0, there must be one of these present for
        each heterogeneous CPU cluster. -->
   <array name="cpu.core_power.cluster0">
-      <value>5</value>   <!-- ~5 mA -->
-      <value>6</value>   <!-- ~6 mA -->
-      <value>8</value>   <!-- ~8 mA -->
-      <value>9</value>   <!-- ~9 mA -->
-      <value>11</value>   <!-- ~11 mA -->
-      <value>11</value>   <!-- ~11 mA -->
-      <value>12</value>   <!-- ~12 mA -->
-      <value>12</value>   <!-- ~12 mA -->
-      <value>19</value>   <!-- ~19 mA -->
-      <value>22</value>   <!-- ~22 mA -->
-      <value>25</value>  <!-- ~25 mA -->
-      <value>28</value>  <!-- ~28 mA -->
-      <value>32</value>  <!-- ~32 mA -->
-      <value>35</value>  <!-- ~35 mA -->
-      <value>46</value>  <!-- ~46 mA -->
-      <value>51</value>  <!-- ~51 mA -->
+        <value>8</value>
+        <value>9</value>
+        <value>10</value>
+        <value>11</value>
+        <value>12</value>
+        <value>14</value>
+        <value>18</value>
+        <value>19</value>
+        <value>22</value>
+        <value>25</value>
+        <value>29</value>
   </array>
 
   <!-- Current at each CPU speed for cluster 1, as per 'cpu.speeds.cluster1'.
        Like cpu.speeds.cluster1, there must be one of these present for
        each heterogeneous CPU cluster. -->
   <array name="cpu.core_power.cluster1">
-      <value>15</value>   <!-- ~23 mA -->
-      <value>20</value>   <!-- ~30 mA -->
-      <value>25</value>   <!-- ~37 mA -->
-      <value>30</value>   <!-- ~46 mA -->
-      <value>36</value>   <!-- ~47 mA -->
-      <value>42</value>   <!-- ~61 mA -->
-      <value>50</value>   <!-- ~71 mA -->
-      <value>57</value>   <!-- ~81 mA -->
-      <value>65</value>   <!-- ~92 mA -->
-      <value>74</value>  <!-- ~101mA -->
-      <value>86</value>  <!-- ~144mA -->
-      <value>102</value>  <!-- ~154mA -->
-      <value>126</value>  <!-- ~182mA -->
-      <value>145</value>  <!-- ~213mA -->
-      <value>163</value>  <!-- ~259mA -->
-      <value>190</value>  <!-- ~266mA -->
-      <value>219</value>  <!-- ~266mA -->
-      <value>249</value>  <!-- ~266mA -->    
-      <value>268</value>  <!-- ~266mA -->    
-      <value>291</value>  <!-- ~266mA -->          
+        <value>16</value>
+        <value>17</value>
+        <value>25</value>
+        <value>28</value>
+        <value>33</value>
+        <value>45</value>
+        <value>46</value>
+        <value>53</value>
+        <value>57</value>
+        <value>70</value>
+        <value>75</value>
+        <value>83</value>
   </array>
 
   <!-- Current at each CPU speed for cluster 2, as per 'cpu.speeds.cluster2'.
        Like cpu.speeds.cluster2, there must be one of these present for
        each heterogeneous CPU cluster. -->
   <array name="cpu.core_power.cluster2">
-      <value>33</value>   <!-- ~41 mA -->
-      <value>42</value>   <!-- ~50 mA -->
-      <value>52</value>   <!-- ~55 mA -->
-      <value>64</value>   <!-- ~68 mA -->
-      <value>74</value>   <!-- ~74 mA -->
-      <value>87</value>   <!-- ~88 mA -->
-      <value>94</value>   <!-- ~101mA -->
-      <value>110</value>   <!-- ~120mA -->
-      <value>123</value>   <!-- ~135mA -->
-      <value>141</value>   <!-- ~151mA -->
-      <value>164</value>   <!-- ~173mA -->
-      <value>186</value>   <!-- ~201mA -->
-      <value>215</value>   <!-- ~253mA -->
-      <value>258</value>   <!-- ~287mA -->
-      <value>287</value>   <!-- ~330mA -->
-      <value>331</value>   <!-- ~386mA -->
-      <value>370</value>   <!-- ~419mA -->
-      <value>422</value>   <!-- ~449mA -->
-      <value>470</value>   <!-- ~502mA -->
-      <value>529</value>   <!-- ~502mA -->      
-      <value>634</value>   <!-- ~502mA -->            
+        <value>29</value>
+        <value>45</value>
+        <value>50</value>
+        <value>55</value>
+        <value>62</value>
+        <value>81</value>
+        <value>92</value>
+        <value>122</value>
+        <value>144</value>
+        <value>159</value>
+        <value>179</value>
+        <value>200</value>
+        <value>228</value>
+        <value>240</value>
+        <value>291</value>
   </array>
 
   <!-- Current when CPU is awake -->
