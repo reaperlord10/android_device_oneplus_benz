@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Include the common OEM chipset BoardConfig.
 include device/oneplus/sm7550-common/BoardConfigCommon.mk
 
@@ -14,6 +16,9 @@ TARGET_OTA_ASSERT_DEVICE := OP5D3FL1
 
 # Display
 TARGET_SCREEN_DENSITY := 420
+
+# Fingerprint
+TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
 
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/oplus/benz.config

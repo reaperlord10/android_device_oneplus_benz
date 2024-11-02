@@ -47,7 +47,7 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'odm/lib64/libAlgoProcess.so': blob_fixup()
         .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V5-ndk.so'),
-    ('odm/lib64/libCOppLceTonemapAPI.so', 'odm/lib64/libCS.so', 'odm/lib64/libSuperRaw.so', 'odm/lib64/libYTCommon.so', 'odm/lib64/libyuv2.so'): blob_fixup()
+    ('odm/lib64/libCOppLceTonemapAPI.so', 'odm/lib64/libCS.so', 'odm/lib64/libSuperRaw.so', 'odm/lib64/libYTCommon.so', 'odm/lib64/libyuv2.so', 'odm/lib64/libaps_frame_registration.so'): blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     ('odm/lib64/libHIS.so', 'odm/lib64/libOGLManager.so'): blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
@@ -63,15 +63,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_register_buf'),
     'odm/lib64/libextensionlayer.so': blob_fixup()
         .replace_needed('libziparchive.so', 'libziparchive_odm.so'),
-    'product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml': blob_fixup()
-        .regex_replace('/my_product', '/product'),
     'odm/etc/camera/CameraHWConfiguration.config': blob_fixup()
-        .regex_replace('SystemCamera =  0;  0;  0;  1;  0;  1;', 'SystemCamera =  0;  0;  0;  0;  0;  0;'),
-    'vendor/etc/libnfc-nci.conf': blob_fixup()
-        .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
-    'vendor/etc/libnfc-nxp.conf': blob_fixup()
-        .regex_replace('(NXPLOG_.*_LOGLEVEL)=0x03', '\\1=0x02')
-        .regex_replace('NFC_DEBUG_ENABLED=1', 'NFC_DEBUG_ENABLED=0'),
+        .regex_replace('SystemCamera =  0;  0;  1;  1;', 'SystemCamera =  0;  0;  0;  0;'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
