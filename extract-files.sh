@@ -53,6 +53,24 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/lib/libqcrilNr.so|vendor/lib64/libqcrilNr.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "vendor.oplus.hardware.communicationcenter-V1-ndk_vendor.so" "vendor.oplus.hardware.communicationcenter-V2-ndk.so" "${2}"
+            ;;
+        system_ext/lib/libwfdservice.so|system_ext/lib64/libwfdservice.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "android.media.audio.common.types-V3-cpp.so" "android.media.audio.common.types-V4-cpp.so" "${2}"
+            ;;
+        *)
+            return 1
+            ;;
+    esac
+
+    return 0
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
