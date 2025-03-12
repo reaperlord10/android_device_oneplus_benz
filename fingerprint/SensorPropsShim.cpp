@@ -37,22 +37,8 @@ SensorProps SensorPropsInit(SensorProps props) {
             props.sensorType = FingerprintSensorType::HOME_BUTTON;
     }
 
-    auto loc_prop =
-            GetProperty("persist.vendor.fingerprint.sensor_location",
-                        GetProperty("persist.vendor.fingerprint.optical.sensorlocation", ""));
-    if (!loc_prop.empty()) {
-        auto loc = Tokenize(loc_prop, ":");
-        bool loc_parsed = false;
-        if (loc.size() >= 2) {
-            int32_t x, y;
-            loc_parsed = ParseInt(loc[0], &x) && ParseInt(loc[1], &y);
-            if (loc_parsed) {
-                props.sensorLocations[0].sensorLocationX = x;
-                props.sensorLocations[0].sensorLocationY = y;
-            }
-        }
-        LOG_IF(WARNING, !loc_parsed) << "Invalid sensor location input (x::y): " << loc_prop;
-    }
+    props.sensorLocations[0].sensorLocationX = 540;
+    props.sensorLocations[0].sensorLocationY = 2181;
 
     auto size = GetProperty("persist.vendor.fingerprint.optical.iconsize", "");
     if (!size.empty()) {
