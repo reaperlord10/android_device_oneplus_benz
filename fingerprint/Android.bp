@@ -1,0 +1,31 @@
+//
+// Copyright (C) 2025 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_defaults {
+    name: "libshims_aidl_fingerprint.benz_defaults",
+    srcs: ["SensorPropsShim.cpp"],
+    shared_libs: ["libbase"],
+    device_specific: true,
+}
+
+cc_library_shared {
+    name: "libshims_aidl_fingerprint_v2.benz",
+    defaults: ["libshims_aidl_fingerprint.benz_defaults"],
+    static_libs: ["android.hardware.biometrics.fingerprint-V2-ndk"],
+}
+
+cc_library_shared {
+    name: "libshims_aidl_fingerprint_v3.benz",
+    defaults: ["libshims_aidl_fingerprint.benz_defaults"],
+    static_libs: ["android.hardware.biometrics.fingerprint-V3-ndk"],
+}
+
+cc_library_shared {
+    name: "libshims_aidl_fingerprint_v4.benz",
+    defaults: ["libshims_aidl_fingerprint.benz_defaults"],
+    static_libs: ["android.hardware.biometrics.fingerprint-V4-ndk"],
+}
+
