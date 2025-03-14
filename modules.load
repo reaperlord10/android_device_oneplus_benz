@@ -9,8 +9,6 @@ mhi_dev_satellite.ko
 phy-qcom-ufs-qmp-v4-waipio.ko
 phy-qcom-ufs-qmp-v4.ko
 phy-qcom-ufs-qmp-v4-khaje.ko
-phy-qcom-ufs-qmp-v4-lahaina.ko
-phy-qcom-ufs-qmp-v4-kona.ko
 pinctrl-spmi-gpio.ko
 pinctrl-spmi-mpp.ko
 pwm-qti-lpg.ko
@@ -50,7 +48,6 @@ core_hang_detect.ko
 usb_bam.ko
 memlat.ko
 memlat_scmi.ko
-cpufreq_stats_scmi.ko
 qcom_ramdump.ko
 panel_event_notifier.ko
 dmesg_dumper.ko
@@ -97,7 +94,6 @@ aw8697.ko
 haptic.ko
 haptic_feedback.ko
 qseecom_proxy.ko
-qcom-i2c-pmic.ko
 sg.ko
 spi-msm-geni.ko
 msm_sharedmem.ko
@@ -159,7 +155,6 @@ leds-qti-flash.ko
 leds-qti-tri-led.ko
 leds-qpnp-vibrator-ldo.ko
 memlat_vendor.ko
-cpufreq_stats_vendor.ko
 plh_vendor.ko
 ipa_fmwk.ko
 ep_pcie_drv.ko
@@ -181,12 +176,9 @@ gh_mem_notifier.ko
 qcom-spmi-adc5-gen3.ko
 qcom-vadc-common.ko
 qti-glink-adc.ko
-industrialio-buffer-cb.ko
 nvmem_qfprom.ko
 slimbus.ko
 slim-qcom-ngd-ctrl.ko
-hwmon.ko
-qti_amoled_ecm.ko
 stm_core.ko
 stm_p_basic.ko
 stm_p_ost.ko
@@ -242,6 +234,8 @@ qcrypto-msm_dlkm.ko
 qce50_dlkm.ko
 hdcp_qseecom_dlkm.ko
 smcinvoke_dlkm.ko
+icnss2.ko
+qca_cld3_qca6750.ko
 wlan_firmware_service.ko
 cnss_nl.ko
 cnss_prealloc.ko
@@ -264,7 +258,6 @@ rmnet_shs.ko
 rmnet_wlan.ko
 rmnet_aps.ko
 rmnet_sch.ko
-rmnet_wlan.ko
 msm_drm.ko
 msm_ext_display.ko
 sync_fence.ko
@@ -272,5 +265,3 @@ msm_hw_fence.ko
 msm-mmrm.ko
 msm_video.ko
 msm_kgsl.ko
-icnss2.ko
-qca_cld3_qca6750.ko
