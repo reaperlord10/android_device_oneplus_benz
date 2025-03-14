@@ -47,8 +47,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator.service.oplus-richtap
+$(call inherit-product, device/oneplus/benz/aidl/richtap/richtap_vibrator.mk)
 
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oneplus/sm7550-common/common.mk)
