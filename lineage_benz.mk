@@ -23,8 +23,8 @@ PRODUCT_MODEL := CPH2613
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="CPH2613IN-user 15 TP1A.220905.001 U.R4T2.1c822c2_1_3 release-keys" \
-    BuildFingerprint=OnePlus/CPH2613IN/OP5D3FL1:15/TP1A.220905.001/U.R4T2.1c822c2_1_3:user/release-keys \
+    BuildDesc="CPH2613IN-user 15 TP1A.220905.001 U.R4T2.1d5d92e-7387-7386 release-keys" \
+    BuildFingerprint=OnePlus/CPH2613IN/OP5D3FL1:15/TP1A.220905.001/U.R4T2.1d5d92e-7387-7386:user/release-keys \
     DeviceName=OP5D3FL1 \
     DeviceProduct=CPH2613 \
     SystemDevice=OP5D3FL1 \
