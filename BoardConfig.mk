@@ -17,9 +17,6 @@ TARGET_OTA_ASSERT_DEVICE := OP5D3FL1
 # Display
 TARGET_SCREEN_DENSITY := 420
 
-# Fingerprint
-TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
-
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/oplus/benz.config
 
