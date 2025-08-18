@@ -43,3 +43,6 @@ TARGET_SUPPORTS_WALLEFFECT := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_INCLUDE_STOCK_AICORE := true
+
+# To Add Bypass Charging Support (need to be adapted in DT and KT as well)
+BYPASS_CHARGE_SUPPORTED  := true
