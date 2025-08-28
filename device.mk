@@ -49,6 +49,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Maintainer
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.paranoid.maintainer=ReaperLord    
+
 # Vibrator
 $(call inherit-product, device/oneplus/benz/aidl/richtap/richtap_vibrator.mk)
 
