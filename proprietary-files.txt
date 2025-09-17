@@ -1135,26 +1135,9 @@ vendor/lib64/vendor.oplus.hardware.sendextcamcmd-V2-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
-
-# Charger
-odm/firmware/fastchg/23871/bms_heating_config.txt
-odm/firmware/fastchg/23871/charging_hyper_mode_config.txt
-odm/firmware/fastchg/23871/charging_thermal_config_default.txt
-odm/firmware/fastchg/charge_time_config.csv
-odm/firmware/fastchg/smart_chg_config_table.txt
-vendor/etc/charger_fw_fstab.qti
-
 # Display calibration data
 vendor/etc/display/qdcm_calib_data_AC147_P_7_A0012_dsc_cmd_mode_panel.json
 vendor/etc/ltm_config_AC147_P_7_A0012_dsc_cmd_mode_panel.xml
-
-# Fingerprint
-odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff
-odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
-odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl_v2.xml
-odm/lib64/libolc_vnd.so
-odm/lib64/vendor.oplus.hardware.olc2-V1-ndk.so
-odm/lib64/vendor.oplus.hardware.olc2-V2-ndk.so
 
 # Sensors config
 odm/etc/sensor.cfg
