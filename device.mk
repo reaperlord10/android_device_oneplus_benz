@@ -53,6 +53,9 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.paranoid.maintainer=ReaperLord    
 
+# Signing
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/lunaris-priv/keys/releasekey
+
 # Vibrator
 $(call inherit-product, device/oneplus/benz/aidl/richtap/richtap_vibrator.mk)
 
