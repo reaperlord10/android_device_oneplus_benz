@@ -837,7 +837,6 @@ odm/etc/camera/tonemap/tonemap_lut_7
 odm/etc/camera/tonemap/tonemap_lut_8
 odm/etc/camera/tonemap/tonemap_lut_9
 odm/etc/camera/AiFace.json
-odm/etc/camera/CameraHWConfiguration.config
 odm/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode
 odm/etc/camera/aiboost_qnn_htp2.3.1_14243576430052348662.bin
 odm/etc/camera/aiboost_qnn_htp2.3.1_9835618889754928864.bin
