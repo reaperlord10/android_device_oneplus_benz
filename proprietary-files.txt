@@ -2092,9 +2092,6 @@ odm/etc/vintf/manifest/manifest_oplus_stability_project_aidl.xml
 odm/lib64/vendor.oplus.hardware.stability.oplus_project-V2-ndk.so
 vendor/lib64/vendor.oplus.hardware.stability.oplus_project-V1-ndk.so
 
-# OPLUS URCC
-odm/lib64/liboplus-uah-client.so
-
 # PD
 vendor/bin/pd-mapper
 vendor/lib64/libpdmapper.so
