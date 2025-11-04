@@ -27,6 +27,9 @@
     <!-- Whether to show Smooth Display feature in Settings Options -->
     <bool name="config_show_smooth_display">true</bool>
 
+    <!-- Whether to use PowerProfile as the primary source for battery design capacity -->
+    <bool name="config_use_power_profile_for_battery_capacity">true</bool>
+
     <!-- The radius of the enrollment progress bar, in dp -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">119</integer>
 
