@@ -132,6 +132,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946743308105858.xml \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
+
 # Doze
 PRODUCT_PACKAGES += \
     OplusDoze \
@@ -246,6 +249,10 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_AF,true)
 
+# Maintainer
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.lunaris.maintainer=ReaperLord
+
 # Media
 PRODUCT_COPY_FILES += \
     $(AUDIO_HAL_DIR)/configs/common/codec2/media_codecs_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_audio.xml \
@@ -330,6 +337,9 @@ PRODUCT_COPY_FILES += \
 # Shipping API
 BOARD_SHIPPING_API_LEVEL := 33
 PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
+
+# Signing
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/lunaris-priv/keys/releasekey
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
