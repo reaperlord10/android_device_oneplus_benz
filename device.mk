@@ -106,6 +106,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml \
     $(LOCAL_PATH)/configs/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraHWConfiguration.config \
+    $(LOCAL_PATH)/configs/camera/config/imx355:$(TARGET_COPY_OUT_ODM)/etc/camera/config/imx355 \
+    $(LOCAL_PATH)/configs/camera/config/imx882:$(TARGET_COPY_OUT_ODM)/etc/camera/config/imx882 \
+    $(LOCAL_PATH)/configs/camera/config/gc02m1:$(TARGET_COPY_OUT_ODM)/etc/camera/config/gc02m1 \
+    $(LOCAL_PATH)/configs/camera/config/oplus_camera_algo_switch_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_algo_switch_config \
+    $(LOCAL_PATH)/configs/camera/config/oplus_camera_aps_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_aps_config \
+    $(LOCAL_PATH)/configs/camera/config/s5k3p9:$(TARGET_COPY_OUT_ODM)/etc/camera/config/s5k3p9 \
     $(LOCAL_PATH)/configs/camera/self_ois.ocfg:$(TARGET_COPY_OUT_ODM)/etc/camera/self_ois.ocfg
 
 # Dalvik
