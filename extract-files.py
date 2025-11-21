@@ -68,7 +68,7 @@ blob_fixups: blob_fixups_user_type = {
     'odm/bin/hw/vendor.oplus.hardware.charger-V6-service': blob_fixup()
         .add_needed('libbase_shim.so'),
     'odm/lib64/libAlgoProcess.so': blob_fixup()
-        .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V6-ndk.so'),
+        .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
     ('odm/lib64/libCOppLceTonemapAPI.so', 'odm/lib64/libSuperRaw.so', 'odm/lib64/libYTCommon.so', 'odm/lib64/libyuv2.so', 'odm/lib64/libaps_frame_registration.so'): blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     ('odm/lib64/libHIS.so', 'odm/lib64/libOGLManager.so'): blob_fixup()
