@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from benz device
 $(call inherit-product, device/oneplus/benz/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common YAAP stuff.
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_benz
+PRODUCT_NAME := yaap_benz
 PRODUCT_DEVICE := benz
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
