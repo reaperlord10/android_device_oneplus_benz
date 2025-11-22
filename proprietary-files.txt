@@ -145,6 +145,9 @@ vendor/lib64/libqtigefar.so
 vendor/lib64/libvui_dmgr.so
 vendor/lib64/libvui_dmgr_client.so
 vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
+vendor/lib64/libar-gsl.so;DISABLE_CHECKELF
+vendor/lib64/liblx-ar_util.so
+vendor/lib64/libar-gpr.so
 
 # Audio configs
 odm/etc/mixer_paths.xml
