@@ -1696,6 +1696,7 @@ odm/vendor/firmware/uff_spi.mdt
 # Fingerprint Pay
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc
+odm/lib64/vendor.oplus.hardware.biometrics.fingerprintpay-V1-ndk.so
 odm/etc/vintf/manifest/manifest_oplus_ifaa.xml
 odm/lib64/libifaa_factory.so
 odm/lib64/librpmbengclient.so
