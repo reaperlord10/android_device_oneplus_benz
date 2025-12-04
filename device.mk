@@ -111,8 +111,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/config/gc02m1:$(TARGET_COPY_OUT_ODM)/etc/camera/config/gc02m1 \
     $(LOCAL_PATH)/configs/camera/config/oplus_camera_algo_switch_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_algo_switch_config \
     $(LOCAL_PATH)/configs/camera/config/oplus_camera_aps_config:$(TARGET_COPY_OUT_ODM)/etc/camera/config/oplus_camera_aps_config \
-    $(LOCAL_PATH)/configs/camera/config/s5k3p9:$(TARGET_COPY_OUT_ODM)/etc/camera/config/s5k3p9 \
-    $(LOCAL_PATH)/configs/camera/self_ois.ocfg:$(TARGET_COPY_OUT_ODM)/etc/camera/self_ois.ocfg
+    $(LOCAL_PATH)/configs/camera/config/s5k3p9:$(TARGET_COPY_OUT_ODM)/etc/camera/config/s5k3p9
 
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
