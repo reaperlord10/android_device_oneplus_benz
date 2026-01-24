@@ -268,6 +268,7 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     NcmTetheringOverlay \
     OPlusFrameworksResTarget \
+    OPlusSettingsProviderResTarget \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget \
     WifiResTarget
