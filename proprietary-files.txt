@@ -2047,9 +2047,6 @@ vendor/lib64/libvmmem.so
 # Misc
 odm/etc/init/init.oppo.reserve.rc
 
-# Native public libraries
-vendor/etc/public.libraries.txt
-
 # Neural networks
 odm/lib64/aiframe/cdsp/signed/libQnnHtpV73Skel.so;MODULE_SUFFIX=.aiframe_signed
 odm/lib64/aiframe/cdsp/unsigned/libQnnHtpV73Skel.so;MODULE_SUFFIX=.aiframe_unsigned
