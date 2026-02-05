@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus Nord CE4 (CPH2613_16.0.2.400(EX01)).
+## are from OnePlus Nord CE4 (CPH2613_16.0.3.500(EX01)).
 
 # ACDBs
 odm/etc/acdbdata/FTM/acdb_cal.acdb
@@ -2093,8 +2093,8 @@ odm/lib64/libaiseg.so
 
 # OPLUS Charger
 odm/bin/hw/gauged
-odm/bin/hw/vendor.oplus.hardware.charger-V9-service
-odm/etc/init/vendor.oplus.hardware.charger-V9-service.rc
+odm/bin/hw/vendor.oplus.hardware.charger-V10-service
+odm/etc/init/vendor.oplus.hardware.charger-V10-service.rc
 odm/etc/vintf/manifest/manifest_oplus_charger_aidl.xml
 odm/etc/charge.cfg
 odm/lib64/libGaiaClient_vnd.so
