@@ -19,18 +19,15 @@ from extract_utils.main import (
 
 namespace_imports = [
     'device/oneplus/benz',
+    'hardware/oplus',
+    'hardware/pixelworks/interfaces',
     'hardware/qcom-caf/sm8550',
     'hardware/qcom-caf/wlan',
-    'hardware/oplus',
     'vendor/oneplus/benz',
     'vendor/qcom/opensource/commonsys/display',
     'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/qcom/opensource/dataservices',
 ]
-
-
-def lib_fixup_odm_suffix(lib: str, partition: str, *args, **kwargs):
-    return f'{lib}_{partition}' if partition == 'odm' else None
 
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
@@ -39,10 +36,6 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
 
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
-    (
-        'libpwirisfeature',
-        'libpwirishalwrapper',
-    ): lib_fixup_odm_suffix,
     (
         'com.qualcomm.qti.dpm.api@1.0',
         'libhwconfigurationutil',
