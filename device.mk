@@ -426,6 +426,7 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set,OPLUS_LINEAGE_VIBRATOR_HAL,INCLUDE_DIR,$(LOCAL_PATH)/vibrator)
 $(call soong_config_set_bool,OPLUS_LINEAGE_VIBRATOR_HAL,OVERRIDE_EFFECTS,true)
+$(call soong_config_set_bool,OPLUS_LINEAGE_VIBRATOR_HAL,USES_OPLUS_AWINIC,true)
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
