@@ -2104,10 +2104,6 @@ vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
-# Performance - EQE_RETAIL_16_W1UM36H.19-13-4
-vendor/etc/perf/perfboostsconfig.xml|bf1422a2f68df0901f893174aa12bc4238b7a267
-vendor/etc/perf/perfconfigstore.xml|5269c2861a00fe9cbe6a7419e9d46251f197a798
-
 # Performance
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
 vendor/bin/hw/vendor.qti.hardware.perf-hal-service
@@ -2130,6 +2126,8 @@ vendor/etc/lm/SilkyScrollsFeature.xml
 vendor/etc/perf/avcsysnodesconfigs.xml
 vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/commonsysnodesconfigs.xml
+vendor/etc/perf/perfboostsconfig.xml
+vendor/etc/perf/perfconfigstore.xml
 vendor/etc/perf/targetavcsysnodesconfigs.xml
 vendor/etc/perf/targetconfig.xml
 vendor/etc/perf/targetresourceconfigs.xml
