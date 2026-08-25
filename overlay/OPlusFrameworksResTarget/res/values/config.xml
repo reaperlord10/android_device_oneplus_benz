@@ -53,7 +53,7 @@
          -2 is invalid so setting will resort to int value specified above.
          Set this to 0.0 to allow screen to go to minimal brightness.
          The user is forbidden from setting the brightness below this level. -->
-    <item type="dimen" name="config_screenBrightnessSettingMinimumFloat">0.02</item>
+    <item type="dimen" name="config_screenBrightnessSettingMinimumFloat">0.0</item>
 
     <!-- Maximum screen brightness allowed by the power manager.
          -2 is invalid so setting will resort to int value specified above.
@@ -148,6 +148,45 @@
         <item>5000</item>
         <item>6000</item>
         <item>10000</item>
+        <item>12000</item>
+        <item>14000</item>
+        <item>16000</item>
+        <item>18000</item>
+        <item>20000</item>
+        <item>22000</item>
+        <item>24000</item>
+        <item>26000</item>
+        <item>28000</item>
+        <item>30000</item>
+        <item>32000</item>
+        <item>34000</item>
+        <item>36000</item>
+        <item>38000</item>
+        <item>40000</item>
+        <item>42000</item>
+        <item>44000</item>
+        <item>46000</item>
+        <item>48000</item>
+        <item>50000</item>
+        <item>52000</item>
+        <item>54000</item>
+        <item>56000</item>
+        <item>58000</item>
+        <item>60000</item>
+        <item>62000</item>
+        <item>64000</item>
+        <item>66000</item>
+        <item>68000</item>
+        <item>70000</item>
+        <item>72000</item>
+        <item>74000</item>
+        <item>76000</item>
+        <item>78000</item>
+        <item>80000</item>
+        <item>82000</item>
+        <item>84000</item>
+        <item>86000</item>
+        <item>88000</item>
     </integer-array>
 
     <!-- Array of desired screen brightness in nits corresponding to the lux values
@@ -203,6 +242,45 @@
         <item>408.0</item>
         <item>435.0</item>
         <item>500.0</item>
+        <item>510.0</item>
+        <item>520.0</item>
+        <item>530.0</item>
+        <item>540.0</item>
+        <item>550.0</item>
+        <item>560.0</item>
+        <item>570.0</item>
+        <item>580.0</item>
+        <item>590.0</item>
+        <item>600.0</item>
+        <item>610.0</item>
+        <item>620.0</item>
+        <item>630.0</item>
+        <item>640.0</item>
+        <item>650.0</item>
+        <item>660.0</item>
+        <item>670.0</item>
+        <item>680.0</item>
+        <item>690.0</item>
+        <item>700.0</item>
+        <item>710.0</item>
+        <item>720.0</item>
+        <item>730.0</item>
+        <item>740.0</item>
+        <item>750.0</item>
+        <item>760.0</item>
+        <item>770.0</item>
+        <item>780.0</item>
+        <item>790.0</item>
+        <item>800.0</item>
+        <item>810.0</item>
+        <item>820.0</item>
+        <item>830.0</item>
+        <item>840.0</item>
+        <item>850.0</item>
+        <item>860.0</item>
+        <item>870.0</item>
+        <item>880.0</item>
+        <item>889.432</item>
     </array>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
