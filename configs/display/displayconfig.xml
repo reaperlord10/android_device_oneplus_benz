@@ -45,7 +45,6 @@
         <!-- HBM transition -->
         <point><value>0.8487700535</value><nits>466.0240</nits></point>
         <point><value>0.8759358289</value><nits>499.3720</nits></point>
-
         <point><value>0.8761497326</value><nits>503.0910</nits></point>
         <point><value>0.9035294118</value><nits>558.5910</nits></point>
         <point><value>0.9187165775</value><nits>590.5140</nits></point>
@@ -90,8 +89,13 @@
             </point>
 
             <point>
-                <sdrNits>500.0</sdrNits>
+                <sdrNits>100.0</sdrNits>
                 <hdrRatio>8.0</hdrRatio>
+            </point>
+
+            <point>
+                <sdrNits>500.0</sdrNits>
+                <hdrRatio>9.0</hdrRatio>
             </point>
 
             <point>
