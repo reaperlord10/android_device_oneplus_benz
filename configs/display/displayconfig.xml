@@ -7,4 +7,39 @@
             <density>420</density>
         </density>
     </densityMapping>
+
+    <highBrightnessMode enabled="true">
+        <transitionPoint>0.8759358289</transitionPoint>
+
+        <minimumHdrPercentOfScreen>0</minimumHdrPercentOfScreen>
+        <minimumLux>10000</minimumLux>
+
+        <timing>
+            <timeWindowSecs>86400</timeWindowSecs>
+            <timeMaxSecs>86400</timeMaxSecs>
+            <timeMinSecs>0</timeMinSecs>
+        </timing>
+
+        <thermalStatusLimit>critical</thermalStatusLimit>
+        <allowInLowPowerMode>false</allowInLowPowerMode>
+
+        <sdrHdrRatioMap>
+            <point>
+                <sdrNits>2.014</sdrNits>
+                <hdrRatio>4.0</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>5.0</sdrNits>
+                <hdrRatio>8.0</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>500.0</sdrNits>
+                <hdrRatio>8.0</hdrRatio>
+            </point>
+            <point>
+                <sdrNits>889.432</sdrNits>
+                <hdrRatio>10.0</hdrRatio>
+            </point>
+        </sdrHdrRatioMap>
+    </highBrightnessMode>
 </displayConfiguration>
